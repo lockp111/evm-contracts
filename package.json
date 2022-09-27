@@ -1,0 +1,21 @@
+{
+  "name": "evm-contracts",
+  "scripts": {
+    "sizer": "npx hardhat size-contracts",
+    "compile": "npx hardhat compile",
+    "test":"GAS_REPORT=true npx hardhat test"
+  },
+  "devDependencies": {
+    "@ethersproject/hardware-wallets": "^5.7.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@openzeppelin/contracts": "^4.8.0-rc.1",
+    "@openzeppelin/contracts-upgradeable": "^4.8.0-rc.1",
+    "@openzeppelin/hardhat-upgrades": "^1.20.1",
+    "dotenv": "^16.0.2",
+    "hardhat": "^2.11.2",
+    "hardhat-contract-sizer": "^2.6.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "typescript": "^4.8.3"
+  }
+}
