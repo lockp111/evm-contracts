@@ -82,7 +82,6 @@ describe("Reward", function () {
     it("Should set signer only by owner", async function () {
         const { reward } = await loadFixture(initRewardTest);
         const [player1, player2] = await ethers.getSigners();
-        // const wallet = new Wallet(SingerKey!, ethers.provider)
         
         await expect(reward.connect(player2).setSigner(player1.address)).
             to.be.revertedWith("Ownable: caller is not the owner")
